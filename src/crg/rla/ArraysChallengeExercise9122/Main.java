@@ -17,7 +17,6 @@ public class Main { //Episode 9.122: Arrays Challenge Exercise
         System.out.println(Arrays.toString(pog));
     }
 
-
     public static int[] getRandIntArray(int length) {
 
         Random rand = new Random();

@@ -10,6 +10,8 @@ public class Main {
         int[] numbers = readIntegers();
         System.out.println(Arrays.toString(numbers));
         System.out.println("The minimum element in is: " + findMin(numbers));
+        System.out.println(Arrays.toString(numbers));
+        System.out.println("reversed: " + Arrays.toString(reverse(numbers)));
     }
 
     private static int[] readIntegers(String input) {
@@ -43,6 +45,16 @@ public class Main {
         }
 
         return lowest;
+    }
+
+    private static int[] reverse(int[] input) {
+        int[] reversed = new int[input.length];
+
+        for (int i = 0; i < input.length; i++) {
+            reversed[i] = input[input.length - 1 - i];
+        }
+
+        return reversed;
     }
 
 }
